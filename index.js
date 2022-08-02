@@ -9,6 +9,6 @@ app.all('*', (req, res) => {
     res.sendFile(path.join(__dirname, 'public/index.html'));
 });
 
-const port = process.env.NODE_ENV;
+const port = process.env.NODE_ENV || 3000;
 
 app.listen(port, () => { })
